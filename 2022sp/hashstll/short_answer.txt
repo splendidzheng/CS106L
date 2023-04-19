@@ -1,0 +1,10 @@
+Assignment 3: STL HashMap (short answer questions)
+Names: Charles
+1. at() vs []
+    operator[] does not throw exceptions,if a key is not found. Instead, it will create a K/M pair for that key with a default.
+2. Find vs. 𝓕𝓲𝓷𝓭
+    std::find() will just move forward to see whether meet the key. However HashMap::find will just jump to the bucket that is possible.
+3. RAII
+    Not exactly, although it distribute resources at initial and free it after quitting, it lack some SMFs.
+4. Increments
+    When the next of node is nullptr, it will check for next bucket, or it will go for it.A nd if it meet the end, it just return end()      
